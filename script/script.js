@@ -46,7 +46,7 @@ console.log(arraySaudacao[0])
 
         if (arraySaudacao[0] == "bom_dia"){
             var hora = "00:00-11:59";
-        }else if (arraySaudacao[0] == "bom_tarde"){
+        }else if (arraySaudacao[0] == "boa_tarde"){
             var hora = "11:59-17:59";
         }else if(arraySaudacao[0] == "boa_noite"){
             var hora = "17:59-23:59";
