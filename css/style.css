@@ -1,0 +1,35 @@
+.container{
+    font-family:Arial, Helvetica, sans-serif;
+    max-width: 700px;
+    background-color:coral;
+    margin:auto;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+#contexto,#quantidaOp{
+    margin-bottom: 10px;
+    display: block;
+    width: 45%;
+    box-sizing: border-box;
+}
+
+.saudacao{
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #e7e7e7; color: black;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 3px 5px black;
+    margin-left: 150px;    
+}

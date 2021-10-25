@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="./css/style.css">
+    <title>Ura-Asterisk</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1> Gerador de Ura - JS</h1>
+
+        <h2>Nome do contexto:</h2>
+        <input id="contexto" type="text" name="contexto" placeholder="Ura-cliente">
+        
+        <h2>Quantidade de opcoes:</h2>
+        <input id="quantidaOp" type="number" name="quantidadeOp" placeholder="0-9">
+        
+        <h2>Saudação:</h2>
+        
+        <div class="saudacao">
+            <input id="bomDia" type="checkbox" name="cumprimento" value="bom_dia"> Bom dia
+            <input id="boaTarde" type="checkbox" name="cumprimento" value="boa_tarde"> Bom Tarde
+            <input id="boaNoite" type="checkbox" name="cumprimento" value="boa_noite"> Boa Noite
+            <input id="padrao" type="checkbox" name="cumprimento" value="padrao"> Padrão
+        </div>
+
+        
+        <button onclick="proximo()">Proximo</button><br>
+        <div id="informativo">
+            <p>Para utilizar o sistema:</p>
+             <ol>
+                 <li>Lembre-se criar a pasta em /var/lib/asterisk/sounds/ura-cliente;</li><br>
+                 <li>Realizar o Upload dos audios e converter com o comando:<br>
+                <strong>sox arquivo.wav -r 8000 -c 1 /var/lib/asterisk/sounds/ura-cliente/arquivo_ura.wav 
+                </strong>(verificar o nome na linha do read);</li><br>
+                <li>Declarar o arquivo no extension.conf:<br>
+                    <strong>#tryinclude custom/ura_cliente.conf;</strong>
+                </li><br>
+                <li>asterisk -rx 'dialplan reload';</li><br>
+                <li>Criar o contexto das filas ou em um arquivo chamandos as macros ou na interface web </li>
+             </ol>
+        </div><br>
+        <div id="resultado"></div>
+        <div id="desativadas"></div>
+    </div>
+
+<script src="./script/script.js"></script>
+
+</body>
+
+</html>
